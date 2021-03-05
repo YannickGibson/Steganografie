@@ -6,6 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="anime.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="anime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="5.0.1" />
   </ItemGroup>
 

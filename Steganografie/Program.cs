@@ -90,7 +90,7 @@ namespace Steganografie
             if (args[0] == "--show" || args[0] == "-s" && args.Length == 2)
             {
                 string fileName = args[1];
-                Image img = Image.FromFile(fileName);
+                Image img = Image.FromFile(fileName, true);
                 Bitmap bitmap = new Bitmap(img);
                 int width = bitmap.Width;
                 int x;
